@@ -75,4 +75,20 @@ public class Vecteurs {
 		}
 		return tab2 ;
 	}
+	/**
+	 *inverse (ArrayList(Long) tab): est une méthode (ArrayList <long> ) qui sert à inverser les élements du tableau en faisant un parcours du tableau 
+	 * en incluant encore une autre fois la structure Collections et la méthode reverse qui inverse les élements du vecteur.
+	 * @param tab est un tableau dynamique en entrée
+	 */
+	public ArrayList<Long> inverse (ArrayList<Long> tab){
+		ArrayList<Long> tab3=new ArrayList<Long> ();
+		for(int i=0;i<tab.size();i++)
+		{
+			tab3.add(tab.get(i));
+		}
+		Collections.reverse(tab3);
+		
+		return tab3 ;
+	}
+	
 }
