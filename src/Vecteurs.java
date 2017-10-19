@@ -1,5 +1,7 @@
 import java.util.ArrayList;
 import java.util.Collections;
+
+
 /**
  * Cette classe consiste à réaliser quelques applications 
  * sur les vecteurs telles que le tri des vecteurs, la somme de
@@ -49,5 +51,28 @@ public class Vecteurs {
 		}
 	Collections.sort(tab3);
 	return tab3 ;
+	}
+	
+	/**
+	 *SommeTab (ArrayList(Long) tab,ArrayList(Long) tab1): est une méthode (ArrayList(Long)) sert à faire la somme de deux tableaux de la meme taille
+	 * en parcourant les deux tableaux et on fait la somme de chaque deux élements 
+	 * du meme rang et on met le résultat dans un autre tableau.
+	 * @param tab le premier tableau.
+	 * @param tab1 le deuxième tableau
+	 */
+	public ArrayList<Long> SommeTab (ArrayList<Long> tab,ArrayList<Long> tab1)  {
+		ArrayList<Long> tab2=new ArrayList<Long> (); 
+		ArrayList<Long> tab3=new ArrayList<Long> ();
+		for(int i=0;i<tab.size();i++)
+		{
+			tab3.add(tab.get(i));
+		}
+		if (tab.size()!=tab1.size()){ return null ;};
+		for (int i=0 ; i<tab3.size();i++){
+			long k= tab3.get(i)+tab1.get(i);
+		 tab2.add(k);
+		 
+		}
+		return tab2 ;
 	}
 }
