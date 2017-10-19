@@ -38,6 +38,36 @@ public class Vecteurs {
 		 * @param tab est le vecteur en entrée lequel on veut appliquer la fonction FACTORIELLE.
 		 * @return un tableau dynamique dont ses élements sont la factorielle des élements du tableau en entrée.
 		 */
+		public ArrayList<Long> facto_tab(ArrayList<Long> tab){
+			ArrayList<Long> tab3=new ArrayList<Long> ();
+			for(int i=0;i<tab.size();i++)
+			{
+				tab3.add(tab.get(i));
+			}
+			for(int i=0;i<tab3.size();i++)
+			{
+				tab3.set(i, fact(tab3.get(i)));
+				
+			}
+			return tab3 ;
+			}
+		/**
+		 * 
+		 * @param n représente le nombre à calculer sa factorielle.
+		 * @return Elle retourne la factorielle d' l'entier donné n!
+		 */
+		public long fact (long n){
+			long inter=1 ;
+			long facto=0;
+			for (int i =2 ;i<=n;i++)
+			{
+				inter = inter*i;
+				
+			}
+			facto=inter;
+			return facto;
+		}
+			
 		
 
 }
