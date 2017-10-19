@@ -25,21 +25,7 @@ public class TestVecteurs {
 		assertEquals(88,resultat);
 	}
 
-	/**
-	 * testinverse :est une méthode qui fait le teste unitaire de la methode inverse.
-	 */
-
-	@Test
-    public void testfacto_tab(){
-		ArrayList <Long> tab= new ArrayList (){{add((long)2);add((long)0);add((long)3);add((long)4);add((long)5);}};
-		ArrayList <Long> tab2= new ArrayList (){{add((long)2);add((long)1);add((long)6);add((long)24);add((long)120);}};
-	    ArrayList <Long> result = new ArrayList <Long>();
-		Vecteurs test = new Vecteurs(tab) ;
-		result = test.facto_tab(tab);
-		Object[] resulttest = result.toArray();
-		Object[] tab2test = tab2.toArray();
-		Assert.assertArrayEquals(tab2test,resulttest);		
-    }
+	
 	
 	
 }
