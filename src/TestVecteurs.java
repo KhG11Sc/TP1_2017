@@ -5,11 +5,6 @@ import java.util.ArrayList;
 import org.junit.Assert;
 import org.junit.Test;
 
-<<<<<<< HEAD
-
-
-
-
 public class TestVecteurs {
 	/**
 	 * testtritab :est une méthode qui fait le teste unitaire de la methode tritab.
@@ -53,9 +48,7 @@ public class TestVecteurs {
 	    ArrayList <Long> result = new ArrayList <Long>();
 		Vecteurs test = new Vecteurs(tab) ;
 		result = test.inverse(tab);
-=======
-public class TestVecteurs {
-
+	}
 	@Test
     public void testmin(){
 		ArrayList <Long> tab= new ArrayList (){{add((long)19);add((long)1);add((long)88);add((long)12);add((long)3);}};
@@ -81,15 +74,11 @@ public class TestVecteurs {
 	    ArrayList <Long> result = new ArrayList <Long>();
 		Vecteurs test = new Vecteurs(tab) ;
 		result = test.facto_tab(tab);
->>>>>>> Kbranch
 		Object[] resulttest = result.toArray();
 		Object[] tab2test = tab2.toArray();
 		Assert.assertArrayEquals(tab2test,resulttest);		
     }
-<<<<<<< HEAD
-}
-=======
-	
+
 	
 }
->>>>>>> Kbranch
+
